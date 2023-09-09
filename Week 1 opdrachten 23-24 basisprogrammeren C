@@ -1,0 +1,296 @@
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int leeftijd;
+int leeftijd_in_maanden;
+
+int main(){
+
+printf("Wat is uw leeftijd?\n\n");
+scanf_s("%d", &leeftijd);
+
+leeftijd_in_maanden = leeftijd * 12;
+printf("\nUw leeftijd in maanden is %d maanden.", leeftijd_in_maanden);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int eerste_getal;
+int tweede_getal;
+int derde_getal;
+float gemiddelde;
+
+int main(){
+
+printf("Kies een eerste getal.\n\n");
+scanf_s("%d", &eerste_getal);
+
+printf("\n\nKies een tweede getal.\n\n");
+scanf_s("%d", &tweede_getal);
+
+printf("\n\nKies een derde getal.\n\n");
+scanf_s("%d", &derde_getal);
+
+gemiddelde = (eerste_getal + tweede_getal + derde_getal) / 3;
+printf("\n\nHet gemiddelde van de drie getallen is %f.\n\n", gemiddelde);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int eerste_getal;
+int tweede_getal;
+
+int main(){
+
+printf("Kies een eerste geheel getal.\n\n");
+scanf_s("%d", &eerste_getal);
+
+printf("\n\nKies een tweede geheel getal.\n\n");
+scanf_s("%d", &tweede_getal);
+
+if (eerste_getal > tweede_getal){
+    printf("\n\nHet grootste gehele getal is %d", eerste_getal);
+}
+else {
+    printf("\n\nHet grootste gehele getal is %d", tweede_getal);
+}
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int eerste_getal;
+int tweede_getal;
+int derde_getal;
+
+int main(){
+
+printf("Kies een eerste geheel getal.\n\n");
+scanf_s("%d", &eerste_getal);
+
+printf("\n\nKies een tweede geheel getal.\n\n");
+scanf_s("%d", &tweede_getal);
+
+printf("\n\nKies een derde geheel getal.\n\n");
+scanf_s("%d", &derde_getal);
+
+if (eerste_getal > tweede_getal && eerste_getal > derde_getal){
+    printf("\n\nHet grootste gehele getal is %d", eerste_getal);
+}
+
+else if (tweede_getal > eerste_getal && tweede_getal > derde_getal){
+    printf("\n\nHet grootste gehele getal is %d", tweede_getal);
+}
+
+else {
+    printf("\n\nHet grootste gehele getal is %d", derde_getal);
+}
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int eerste_gehele_getal;
+int tweede_gehele_getal;
+
+int main(){
+
+printf("We gaan kijken of de twee integers die u geeft gelijk of niet gelijk aan elkaar zijn.\n\n");
+
+printf("Kies een eerste gehele getal.\n\n");
+scanf_s("%d", &eerste_gehele_getal);
+
+printf("\n\nKies een tweede gehele getal.\n\n");
+scanf_s("%d", &tweede_gehele_getal);
+
+if (eerste_gehele_getal == tweede_gehele_getal){
+    printf("\n\nDe twee integers die u heeft gegeven zijn gelijk aan elkaar");
+}
+else {
+    printf("\n\nDe twee integers die u heeft gegeven zijn niet gelijk aan elkaar.");
+}
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+float decimaal_getal;
+
+int main(){
+
+printf("We gaan kijken hoe het decimale getal eruit gaat zien die u geeft met vier decimalen.\n\n");
+
+printf("Kies een decimaal getal.\n");
+scanf_s("%.4f", &decimaal_getal);
+
+printf("\n\nUw getal met vier decimalen is %.4f.", decimaal_getal);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+double oppervlakte_van_cirkel;
+double omtrek_van_cirkel;
+double straal_van_cirkel;
+
+int main() {
+
+printf("Geef de waarde van de straal van uw cirkel:\n\n");
+scanf("%lf", &straal_van_cirkel);
+
+oppervlakte_van_cirkel = M_PI * (straal_van_cirkel * straal_van_cirkel);
+omtrek_van_cirkel = 2 * M_PI * straal_van_cirkel;
+
+printf("\n\nDe oppervlakte van uw cirkel is %lf.\n", oppervlakte_van_cirkel);
+printf("De omtrek van uw cirkel is %lf.\n", omtrek_van_cirkel);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+float prijs_exclusief_BTW;
+float prijs_inclusief_BTW;
+
+int main(){
+
+printf("We gaan de prijs van een product inclusief BTW (21 procent) berekenen.\n\n");
+printf("Geef een prijs van een product exclusief BTW (21 procent).\n");
+scanf_s("%f", &prijs_exclusief_BTW);
+
+prijs_inclusief_BTW = prijs_exclusief_BTW + (0.21 * prijs_exclusief_BTW);
+
+printf("\nDe prijs inclusief BTW (21 procent) is $%.2f.\n\n", prijs_inclusief_BTW);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+double km_per_u;
+double m_per_s;
+
+int main(){
+
+printf("We gaan een snelheid van km/u naar m/s veranderen.\n\n");
+printf("Geef een snelheid in km/u.\n");
+scanf_s("%lf", &km_per_u);
+
+m_per_s = km_per_u / 3.6;
+
+printf("\nDe snelheid in m/s is %.2lf m/s.", m_per_s);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+float spanning;
+float weerstand;
+float stroomsterkte;
+
+int main(){
+
+printf("We gaan de stroomsterkte I berekenen met behulp van de spanning U en weerstand R.\n\n");
+printf("Geef een waarde voor de spanning U in V.\n");
+scanf_s("%f", &spanning);
+
+printf("\nGeef een waarde voor de weerstand R in ohm.\n");
+scanf_s("%f", &weerstand);
+
+stroomsterkte = spanning / weerstand;
+
+printf("\nDe stroomsterkte is %.4f A.\n\n", stroomsterkte);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int eerste_getal;
+int tweede_getal;
+int quotient;
+int rest;
+int product;
+
+int main(){
+
+printf("We gaan een deling doen waar de grootste gemene deler en de rest te zien is (alleen gehele getallen).\n\n");
+printf("Kies een eerste getal.\n");
+scanf("&d", &eerste_getal);
+
+printf("\n\nKies een tweede getal.\n");
+scanf("%d", &tweede_getal);
+
+quotient = eerste_getal / tweede_getal;
+product = eerste_getal * tweede_getal;
+rest = eerste_getal - (tweede_getal * scanf("%.0d", &quotient));
+
+printf("\n\nDe grootste gemene deler is %.0d.", &quotient);
+printf("\n\nDe rest is %d.", &rest);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+float seconden;
+float uren;
+float minuten;
+
+int main() {
+
+printf("Kies een aantal seconden.\n");
+scanf("%f", &seconden);
+
+uren = seconden / 3600.0;
+minuten = seconden * (1 / 60.0);
+printf("\n%.2f uren.", uren);
+printf("\n%.2f minuten.", minuten);
+}
+
+*/
