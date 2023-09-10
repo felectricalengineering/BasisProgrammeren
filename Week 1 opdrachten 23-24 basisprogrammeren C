@@ -294,3 +294,56 @@ printf("\n%.2f minuten.", minuten);
 }
 
 */
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int geheel_getal;
+int kwadraat;
+
+int main(){
+
+    printf("Geef een integer.\n");
+    scanf_s("%d", &geheel_getal);
+
+    kwadraat = geheel_getal * geheel_getal;
+
+    printf("De kwadraat van de integer is %d.\n", kwadraat);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int geheel_getal;
+int kwadraat;
+int keuze;
+int derde_macht;
+
+int main(){
+
+    printf("Geef een integer.\n");
+    scanf_s("%d", &geheel_getal);
+
+    printf("Voor kwadrateren, toets 1. Voor 3e machtsheffen, toets 2.\n");
+    scanf_s("%d", &keuze);
+
+    if(keuze == 1){
+
+        kwadraat = geheel_getal * geheel_getal;
+        printf("\n\nDe kwadraat van de integer is %d.", kwadraat);
+    }
+
+    else if(keuze == 2){
+
+        derde_macht = geheel_getal * geheel_getal * geheel_getal;
+        printf("\n\nDe integer tot de macht drie is %d.", derde_macht);
+    }
+}
+
+*/
