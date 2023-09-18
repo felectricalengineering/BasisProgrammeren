@@ -1,1 +1,321 @@
+/*
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int eerste_getal;
+int tweede_getal;
+int product;
+
+int main(){
+
+printf("Geef een eerste positieve gehele getal.\n");
+scanf_s("%d", &eerste_getal);
+
+printf("\nGeef een tweede positieve gehele getal.\n");
+scanf_s("%d", &tweede_getal);
+
+product = eerste_getal * tweede_getal;
+
+if(product < 214783647){
+
+  printf("\n%d.", product);
+}
+
+else {
+
+    printf("\nOverflow.");
+}
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+printf("Berekening van de grootte van enkele fundamentele typen.\n\n");
+      printf("char:%3d byte \n", sizeof(char));
+      printf("short:%3d bytes\n", sizeof(short));
+      printf("int:%3d bytes\n", sizeof(int));
+      printf("long:%3d bytes\n", sizeof(long));
+      printf("unsigned:%3d bytes\n", sizeof(unsigned));
+      printf("float:%3d bytes\n", sizeof(float));
+      printf("double:%3d bytes\n", sizeof(double));
+      printf("long double:%3d bytes\n", sizeof(long double));
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+int i = 1;
+for(i = 1; i <= 100; ++i){
+    printf("%d\n", i);
+}
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+char karakter;
+int index_waarde;
+
+int main(){
+
+printf("Geef een karakter: ");
+scanf_s("%c", &karakter);
+
+index_waarde = (int)karakter;
+
+printf("De index van de karakter is: %d", index_waarde);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int n;
+int som;
+int i;
+
+int main(){
+
+printf("Voer een getal n in: ");
+scanf_s("%d", &n);
+
+for(i = 1; i <= n; i++){
+    som += i;
+}
+
+printf("\n\nDe som is %d.", som);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int n;
+int som;
+int i;
+int overflow;
+
+int main(){
+
+printf("Geef een getal n: ");
+scanf_s("%d", &n);
+
+while(i++ < n, som < overflow){
+    som += i;
+}
+
+if(som > n){
+    printf("Overflow.");
+}
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int eerste_getal;
+int tweede_getal;
+int quotient;
+
+int main(){
+
+printf("Geef een eerste gehele getal: ");
+scanf_s("%d", &eerste_getal);
+
+printf("Geef een tweede gehele getal: ");
+scanf_s("%d", &tweede_getal);
+
+if (eerste_getal / tweede_getal == quotient){
+   printf("WAAR.");
+}
+
+else {
+    printf("ONWAAR.");
+}
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+char letter;
+char klinker1 = 'a';
+char klinker2 = 'e';
+char klinker3 = 'i';
+char klinker4 = 'o';
+char klinker5 = 'u';
+
+int main(){
+
+printf("Geef een letter: ");
+scanf_s("%c", &letter);
+
+if (letter == klinker1 || letter == klinker2 || letter == klinker3 || letter == klinker4 || letter == klinker5){
+    printf("De letter is een klinker.");
+}
+
+else {
+    printf("De letter is een medeklinker.");
+}
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+
+float kWh_dal;
+float totaalprijs_kWh_dal;
+float kWh_piek;
+float totaalprijs_kWh_piek;
+float totaalprijs_elektriciteit;
+
+int main(){
+
+printf("Geef het aantal kWh van uw dalmoment in 1 jaar: ");
+scanf_s("%f", &kWh_dal);
+
+totaalprijs_kWh_dal = 0.40 * kWh_dal;
+
+printf("Geef het aantal kWh van uw piekmoment in 1 jaar: ");
+scanf_s("%f", &kWh_piek);
+
+totaalprijs_kWh_piek = 0.46 * kWh_piek;
+
+totaalprijs_elektriciteit = totaalprijs_kWh_dal + totaalprijs_kWh_piek + 80;
+
+printf("Uw totale elektriciteitkosten voor 1 jaar is: %.2f", totaalprijs_elektriciteit);
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int positief_getal;
+int i;
+double resultaat;
+
+int main(){
+
+printf("Geef een positief getal n: ");
+scanf_s("%d", &positief_getal);
+
+for(i = 1; i <= positief_getal; i++){
+
+   resultaat = sqrt(i);
+   printf("De wortel van %d is %lf.\n", i, resultaat);
+}
+}
+
+*/
+
+/*
+
+// opdracht 12
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+double grondtal;
+double exponent;
+double resultaat;
+
+int main(){
+
+printf("Geef een grondtal: ");
+scanf_s("%lf", &grondtal);
+
+printf("Geef een exponent: ");
+scanf_s("%lf", &exponent);
+
+resultaat = pow(grondtal, exponent);
+
+printf("Het resultaat is: %lf.", resultaat);
+}
+
+*/
+
+/*
+
+//opdracht 14
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float a;
+float b;
+float c;
+float x1;
+float x2;
+float discriminant;
+
+int main(){
+
+printf("Geef a: ");
+scanf_s("%f", &a);
+
+printf("Geef b: ");
+scanf_s("%f", &b);
+
+printf("Geef c: ");
+scanf_s("%f", &c);
+
+discriminant = b * b - 4 * a * c;
+
+if(discriminant > 0){
+
+x1 = (-b + sqrt(discriminant)) / (2 * a);
+x2 = (-b - sqrt(discriminant)) / (2 * a);
+
+printf("De oplossingen van de abc-formule zijn %f en %f.", x1, x2);
+}
+
+else if(discriminant == 0){
+
+x1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
+
+printf("De oplossing van de abc-formule zijn %f.", x1);
+}
+
+else {
+
+printf("Uitkomst is imaginair.");
+}
+}
+
+*/
