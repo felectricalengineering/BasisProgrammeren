@@ -1,0 +1,249 @@
+/*
+//Flowchart A
+#include <stdio.h>
+#include <stdlib.h>
+
+int a;
+
+int main(){
+
+printf("Geef een geheel getal: ");
+scanf_s("%d", &a);
+
+if(a > 0){
+
+    printf("%d is groter dan 0.", a);
+}
+
+else{
+
+    printf("%d is kleiner of gelijk aan 0.", a);
+}
+}
+
+*/
+
+/*
+
+//Flowchart 2
+#include <stdio.h>
+#include <stdlib.h>
+
+int a;
+int a = a * -2;
+
+int main(){
+
+printf("Geef een geheel getal: ");
+scanf_s("%d", &a);
+
+while(a <= 100){
+
+    printf("%d", a);
+}
+
+*/
+
+/*
+//opdracht 5
+#include <stdio.h>
+#include <stdlib.h>
+
+int i = 0;
+
+int main(){
+
+while(i < 10){
+    i++;
+    printf("%d\n", i);
+}
+}
+
+*/
+
+/*
+//opdracht 5
+#include <stdio.h>
+#include <stdlib.h>
+
+int i;
+
+int main(){
+
+for(i = 2; i <= 200; i += 2){
+
+    printf("%d\n", i);
+}
+}
+
+*/
+
+/*
+//opdracht 6
+#include <stdio.h>
+#include <stdlib.h>
+
+int i = 2;
+
+int main(){
+
+for(i = 2; i <= 200; i += 2){
+
+    printf("%d\n", i);
+}
+}
+
+*/
+
+/*
+
+//opdracht 7
+#include <stdio.h>
+#include <stdlib.h>
+
+float eerste_cijfer;
+float tweede_cijfer;
+float derde_cijfer;
+float vierde_cijfer;
+float vijfde_cijfer;
+float zesde_cijfer;
+float gemiddelde;
+
+int main(){
+
+printf("Geef het eerste cijfer: \n");
+scanf_s("%f", &eerste_cijfer);
+
+printf("\nGeef het tweede cijfer: \n");
+scanf_s("%f", &tweede_cijfer);
+
+printf("\nGeef het derde cijfer: \n");
+scanf_s("%f", &derde_cijfer);
+
+printf("\nGeef het vierde cijfer: \n");
+scanf_s("%f", &vierde_cijfer);
+
+printf("\nGeef het vijfde cijfer: \n");
+scanf_s("%f", &vijfde_cijfer);
+
+printf("\nGeef het zesde cijfer: \n");
+scanf_s("%f", &zesde_cijfer);
+
+gemiddelde = (eerste_cijfer + tweede_cijfer + derde_cijfer + vierde_cijfer + vijfde_cijfer + zesde_cijfer) / 6;
+
+if(gemiddelde < 5.5){
+
+    printf("\n%.1f dus een onvoldoende.", gemiddelde);
+}
+
+else{
+
+    printf("\n%.1f dus een voldoende.", gemiddelde);
+}
+}
+
+*/
+
+/*
+
+//opdracht 8
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+double saldo;
+
+int main(){
+
+saldo = 1000 * pow(1.02, 15);
+
+printf("De saldo van uw spaarrekening met 1000 euro is na 15 jaar met een rente van 2 procent %.2f euro.", saldo);
+}
+
+*/
+
+/*
+
+//opdracht 13
+#include <stdio.h>
+#include <stdlib.h>
+
+int cijfer;
+
+int main()
+{
+
+    printf("Geef een cijfer: ");
+    scanf_s("%d", &cijfer);
+
+// switch statement
+	switch (cijfer) {
+		case 1:
+			printf("Zwaar onvoldoende\n");
+			break;
+
+		case 2:
+			printf("Onvoldoende\n");
+			break;
+
+		case 3:
+			printf("Zeer matig\n");
+			break;
+
+        case 4:
+			printf("Matig\n");
+			break;
+
+        case 5:
+			printf("Bijna voldoende\n");
+			break;
+
+        case 6:
+			printf("Voldoende\n");
+			break;
+
+        case 7:
+			printf("Redelijk goed\n");
+			break;
+
+        case 8:
+			printf("Goed\n");
+			break;
+
+        case 9:
+			printf("Zeer goed\n");
+			break;
+
+        case 10:
+			printf("Uitmuntend\n");
+			break;
+
+        default:            printf("Geen geldig cijfer. Kies een geheel getal tussen de 1 en de 10.\n");
+            break;
+	}
+}
+
+*/
+
+/*
+
+//12a
+#include <stdio.h>
+#include <stdlib.h>
+
+int geheel_getal;
+int faculteit = 1;
+int i;
+
+int main()
+{
+    printf("Geef een geheel getal: ");
+    scanf_s("%d", &geheel_getal);
+
+    for(int i = 1; i <= geheel_getal; i++){
+    faculteit *= i;
+    }
+    printf("%d\n", faculteit);
+}
+
+*/
